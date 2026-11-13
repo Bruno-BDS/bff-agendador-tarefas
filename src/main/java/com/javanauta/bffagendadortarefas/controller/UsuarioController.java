@@ -129,7 +129,7 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.cadastraTelefone(token, dto));
     }
 
-    @PostMapping("/endereco/{cep}")
+    @GetMapping("/endereco/{cep}")
     @Operation(summary = "Busca endereço pelo cep",
             description = "Busca dados de endereço  recebendo um cep")
     @ApiResponse(responseCode = "200", description = "Dados de endereço retornados com sucesso")

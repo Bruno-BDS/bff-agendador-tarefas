@@ -37,8 +37,8 @@ public class TarefasService {
         tarefasClient.deletaTarefasPorId(id,token);
     }
 
-    public TarefasDTOResponse alteraStatus(StatusNotificacao Status, String id, String token) {
-       return tarefasClient.alteraStatusNotificacao(Status, id, token);
+    public TarefasDTOResponse alteraStatus(StatusNotificacao status, String id, String token) {
+       return tarefasClient.alteraStatusNotificacao(status, id, token);
     }
 
     public TarefasDTOResponse updateTarefas(TarefasDTORequest dto, String id, String token) {

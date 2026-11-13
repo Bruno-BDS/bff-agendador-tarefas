@@ -45,7 +45,7 @@ services:
     ports:
       - "5433:5432"
   mongo:
-    image: mongo:latest
+    image: mongo:7.0
     container_name: mongo
     restart: no
     ports:
