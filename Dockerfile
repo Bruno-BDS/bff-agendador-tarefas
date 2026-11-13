@@ -1,9 +1,9 @@
-FROM maven:3.9.16-eclipse-temurin-17 AS build
+FROM maven:3.9.16-eclipse-temurin-26 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean install -DskipTests
 
-FROM azul/zulu-openjdk:17
+FROM azul/zulu-openjdk:26-latest
 
 WORKDIR /app
 
